@@ -1,0 +1,13 @@
+$body-color : #FFFFFF;
+$font-color : #333;
+$btn-bgcolor : #0D172A;
+$hover-color : #F7DF1E;
+$dropdown-color : #FFFCF5;
+$hover-header-color:#7F7F7F;
+
+
+@mixin font($size,$weight,$color){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}

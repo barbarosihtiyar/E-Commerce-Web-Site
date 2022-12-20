@@ -1,1 +1,93 @@
 @import "variables";
+
+body {
+    font-size: 10px;
+    background-color: $body-color;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+
+header{
+position: fixed;
+width: 100%;
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    background-color: $body-color;
+
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+
+        .menu {
+            width: 100%;
+            margin-top: 1%;
+            ul {
+                @include font(1rem, 600, $font-color);
+                display: flex;
+                margin-left: 15%;
+                gap: 14%;
+                line-height: 50px;
+                li {
+                    &:hover {
+                        color: $hover-header-color;
+                    }
+                }
+                .products {
+                    position: relative;
+                    &:hover .dropdownfirst {
+                        display: block;
+                    }
+                }
+                .contact{
+                    position: relative;
+                    &:hover .dropdownsecond{
+                        display: block;
+                    }
+                }
+            }
+            .dropdown {
+                display: none;
+                position: absolute;
+                background-color: $dropdown-color;
+                margin-left: 0;
+                padding-left: 0;
+                width: 130px;
+                left: -45%;
+                li{
+                    text-align: center;
+                }
+            }
+        }
+
+        .logo {
+            .header-logo {
+                img {
+                    width: 40%;
+                }
+            }
+        }
+
+        .cart {
+            display: flex;
+            align-items: center;
+            gap: 15%;
+            cursor: pointer;
+            margin-right: 4%;
+            margin-top: 1%;
+            i {
+                font-size: 1.3rem;
+            }
+            div {
+                @include font(0.88rem,600,$font-color);
+
+            }
+        }
+    }
+}
+}
