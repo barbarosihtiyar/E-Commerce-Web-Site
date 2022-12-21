@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>E-COMMERCE WEBSITE</title>
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <div class="header-wrapper">
-            <div class="logo">
-                <a href="#" class="header-logo"><img src="./image/bird-logo-30.png"></a>
-            </div>
-            <div class="menu">
-                <ul style="cursor: pointer;">
-                    <li class="products">Products
-                    <ul class="dropdown dropdownfirst">
-                        <li>Sunglasses</li>
-                        <li>Trousers</li>
-                        <li>Necklace</li>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="#" class="header-logo"><img src="./image/bird-logo-30.png"></a>
+                </div>
+                <div class="menu">
+                    <ul style="cursor: pointer;">
+                        <li class="products">Products
+                            <ul class="dropdown dropdownfirst">
+                                <li>Sunglasses</li>
+                                <li>Trousers</li>
+                                <li>Necklace</li>
+                            </ul>
+                        </li>
+                        <li>Faq's</li>
+                        <li class="contact">Contact
+                            <ul class="dropdown dropdownsecond">
+                                <li>Reach Us</li>
+                                <li>About Us</li>
+                                <li>Find Us</li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                    <li>Faq's</li>
-                    <li class="contact">Contact
-                        <ul class="dropdown dropdownsecond">
-                            <li>Reach Us</li>
-                            <li>About Us</li>
-                            <li>Find Us</li>
-                        </ul>    
-                    </li>
-                </ul>
-            </div>
-            <div class="cart">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <div id="cartText">Cart(<span id="cartValue">0</span>)</div>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <div id="cartText">Cart(<span id="cartValue">0</span>)</div>
+                </div>
             </div>
         </div>
-    </div>
-</header>
-    
+    </header>
+    <main>
+        <section class="slider">
+            <div class="slideshow-container">
 
-<script src="./main.js"></script>
+                <div class="mySlides fade">
+                    <img src="./image/slider-1.jpeg" style="width:100%">
+                    <span id="slider1Text">Sale of the year!</span>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./image/slider-2.jpeg" style="width:100%">
+                    <span id="slider2Text">Discover new glasses for summer!</span>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./image/slider-3.jpeg" style="width:100%">
+                    <span id="slider3Text">More than expected!</span>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        </section>
+    </main>
+
+
+    <script src="./main.js"></script>
 </body>
+
 </html>
