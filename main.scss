@@ -216,3 +216,98 @@ main{
 
 
 // SLİDER END
+.parts{
+    background-color: #FFFCF5;
+    margin-top: 3%;
+
+.showPart{
+    max-width: 1250px;
+    margin: 0 auto;
+    .partWrapper{
+        display: flex;
+        .partText{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto 0;
+            margin-right: auto;
+            #specialText{
+                @include font(1.5rem,600,$font-color);
+                margin-bottom: 3%;
+                width:32%;
+                border: 1px solid $hover-color;
+                background-color: $hover-color;
+                border-radius: 10px;
+                padding: 8px;
+            }
+            #newCollection{
+                @include font(2.3rem,700,$font-color);
+            }
+        }
+        .partProduct{
+            display: flex;
+            margin-top: 3%;
+            gap: 1%;
+            .afterFilter::after{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(66,22,55,.3);
+                border-radius: 10px;
+            }
+            .partProductFirst{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            .sunglassesBorder,.trousersBorder,.necklacesBorder{
+                position: relative;
+                .borderPart{
+                    position: absolute;
+                    @include font(1.3rem,700,$font-color);
+                    background-color: #FFFFFF;
+                    z-index: 2;
+                    cursor: pointer;
+                    transition: scale 0.1s;
+                    &:hover{
+                        background-color: $hover-color;
+                        scale: 1.1;
+                    }
+                }
+                #sunglassesText{
+                    top: 40%;
+                    left: 25%;                    
+                    border-radius: 10px;
+                    padding: 0 3%;
+                    width: 150px;
+                    text-align: center;
+                }
+                #trousersText{
+                    top: 35%;
+                    left: 25%;
+                    border-radius: 10px;
+                    padding: 0 3%;
+                    width: 150px;
+                    text-align: center;
+                }
+                #necklacesText{
+                    top: 40%;
+                    left: 25%;
+                    border-radius: 10px;
+                    padding: 3% 2%;
+                    width: 180px;
+                    text-align: center;
+                }
+                .partProductImage{
+                    border-radius: 15px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+}
