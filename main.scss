@@ -311,3 +311,79 @@ main{
     }
 }
 }
+
+.product{
+    .sectionProduct{
+        max-width: 1350px;
+        margin: 0 auto;
+        .productWrapper{
+            margin-top: 3%;
+            .productTitle{
+                @include font(1.8rem,600,$font-color);
+                text-align: center;
+                margin-bottom: 1%;
+            }
+            .productsPartTitle{
+                @include font(1.2rem,600,$font-color);
+                text-align: center;
+
+                .cartHover{
+                    &:hover{
+                        border-bottom: 2px solid $hover-color;
+                        cursor: pointer;
+                        padding-bottom: 5px;
+
+                    }
+                }
+                #textAll,#textSunglasses,#textTrousers{
+                    margin-right: 2%;
+                }
+            }
+            .cart{
+                display: flex;
+            .productCart{
+                width: 276px;
+                border: 1px solid $hover-color;
+                margin-top: 3%;
+                .productCartInfo{
+                    margin-top: 5%;
+                    margin-bottom: 3%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 3%;
+                    .productCartTitle{
+                        @include font(0.95rem,600,$font-color);
+                    }
+                    .productCartTextInfo{
+                        @include font(0.9rem,600,$cartInfoText);
+                    }
+                    .productCartPrice{
+                        @include font(0.9rem,700,$btn-bgcolor);
+                    }
+                }
+                .productCartButton{
+                    .addCart{
+                        background-color: $btn-bgcolor;
+                        border:1px solid $btn-bgcolor;
+                        border-radius: 10px;
+                        outline: none;
+                        @include font(0.85rem,700,$body-color);
+                        padding: 4%;
+                        width: 110px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: $hover-color;
+                            border: 1px solid $hover-color;
+                            color: $btn-bgcolor;
+                        }
+                    }
+                    text-align: center;
+                    margin-bottom: 5%;
+                }
+
+            }
+        
+        }
+    }
+}
+}
