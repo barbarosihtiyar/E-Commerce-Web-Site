@@ -14,7 +14,7 @@ ul {
 header{
 position: fixed;
 width: 100%;
-z-index: 2;
+z-index: 5;
 background-color: #FFFFFF;
 top: 0;
 
@@ -326,6 +326,7 @@ main{
             .productsPartTitle{
                 @include font(1.2rem,600,$font-color);
                 text-align: center;
+                margin-bottom: 1%;
 
                 .cartHover{
                     &:hover{
@@ -339,12 +340,25 @@ main{
                     margin-right: 2%;
                 }
             }
-            .cart{
+            .allCart{
                 display: flex;
+                flex-wrap: wrap;
+                gap: 2%;
+                margin-left: 3%;
+            .cart{
+                margin-bottom: 2%;
             .productCart{
-                width: 276px;
+                width: 294px;
                 border: 1px solid $hover-color;
                 margin-top: 3%;
+                border-radius: 10px;
+                .productCartPhoto{
+                    img{
+                        max-height: 292px;
+                        min-width:292px;
+                        border-radius: 10px;
+                    }
+                }
                 .productCartInfo{
                     margin-top: 5%;
                     margin-bottom: 3%;
@@ -382,6 +396,7 @@ main{
                 }
 
             }
+        }
         
         }
     }
