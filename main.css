@@ -345,6 +345,11 @@ main {
   cursor: pointer;
   padding-bottom: 5px;
 }
+.product .sectionProduct .productWrapper .productsPartTitle .cartBorder {
+  border-bottom: 2px solid #F7DF1E;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
 .product .sectionProduct .productWrapper .productsPartTitle #textAll, .product .sectionProduct .productWrapper .productsPartTitle #textSunglasses, .product .sectionProduct .productWrapper .productsPartTitle #textTrousers {
   margin-right: 2%;
 }
@@ -410,4 +415,97 @@ main {
   background-color: #F7DF1E;
   border: 1px solid #F7DF1E;
   color: #0D172A;
+}
+
+.sectionFaqs .faqs {
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+.sectionFaqs .faqs .faqsWrapper .faqsTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst {
+  border: 1px solid #F7DF1E;
+  padding: 2%;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst i {
+  background-color: #F7DF1E;
+  color: #0D172A;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #F7DF1E;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  float: right;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .delivery {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .collapseFirst {
+  display: none;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond {
+  border: 1px solid #F7DF1E;
+  padding: 2%;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond i {
+  background-color: #F7DF1E;
+  color: #0D172A;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #F7DF1E;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  float: right;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .reaching {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .collapseSecond {
+  display: none;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird {
+  border: 1px solid #F7DF1E;
+  padding: 2%;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird i {
+  background-color: #F7DF1E;
+  color: #0D172A;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #F7DF1E;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  float: right;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .policy {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .collapseThird {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

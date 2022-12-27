@@ -336,6 +336,11 @@ main{
 
                     }
                 }
+                .cartBorder{
+                    border-bottom: 2px solid $hover-color;
+                    cursor: pointer;
+                    padding-bottom: 5px;
+                }
                 #textAll,#textSunglasses,#textTrousers{
                     margin-right: 2%;
                 }
@@ -401,4 +406,93 @@ main{
         }
     }
 }
+}
+
+.sectionFaqs{
+    .faqs{
+        max-width: 1250px;
+        margin: 0 auto;
+        margin-top: 2%;
+        .faqsWrapper{
+            .faqsTitle{
+                text-align: center;
+                @include font(1.8rem,700,$font-color);
+            }
+            .partFaqs{
+                width: 85%;
+                margin: 0 auto;
+                margin-top: 2%;
+                .faqsPartFirst{
+                    border: 1px solid $hover-color;
+                    padding: 2%;
+                    margin-bottom: 3%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    i{
+                        background-color: $hover-color;
+                        color: $btn-bgcolor;
+                        cursor: pointer;
+                        padding: 5px;
+                        border: 1px solid $hover-color;
+                        border-radius: 10px;
+                        font-size: 0.8rem;
+                        float: right;
+                    }
+                    .delivery{
+                        @include font(1rem,600,$font-color)
+                    }
+                    .collapseFirst{
+                        display: none;
+                    }
+                }
+                .faqsPartSecond{
+                    border: 1px solid $hover-color;
+                    padding: 2%;
+                    margin-bottom: 3%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    i{
+                        background-color: $hover-color;
+                        color: $btn-bgcolor;
+                        cursor: pointer;
+                        padding: 5px;
+                        border: 1px solid $hover-color;
+                        border-radius: 10px;
+                        font-size: 0.8rem;
+                        float: right;
+                    }
+                    .reaching{
+                        @include font(1rem,600,$font-color);
+                        text-align: center;
+                    }
+                    .collapseSecond{
+                        display: none;
+                    }
+                }
+                .faqsPartThird{
+                    border: 1px solid $hover-color;
+                    padding: 2%;
+                    margin-bottom: 3%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    i{
+                        background-color: $hover-color;
+                        color: $btn-bgcolor;
+                        cursor: pointer;
+                        padding: 5px;
+                        border: 1px solid $hover-color;
+                        border-radius: 10px;
+                        font-size: 0.8rem;
+                        float: right;
+                    }
+                    .policy{
+                        @include font(1rem,600,$font-color);
+                    }
+                    .collapseThird{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
