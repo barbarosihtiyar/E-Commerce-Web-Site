@@ -101,3 +101,40 @@ textNecklace.addEventListener("click",function(){
   }
 
 });
+
+
+const firstIcon = document.getElementById("firstIcon");
+const secondIcon = document.getElementById("secondIcon");
+const thirdIcond = document.getElementById("thirdIcon");
+const faqsPartFirst = document.querySelector(".faqsPartFirst");
+const faqsPartSecond = document.querySelector(".faqsPartSecond");
+const faqsPartThird = document.querySelector(".faqsPartThird");
+const collapseFirst = document.querySelector(".collapseFirst");
+const collapseSecond = document.querySelector(".collapseSecond");
+const collapseThird = document.querySelector(".collapseThird");
+const delivery = document.querySelector(".delivery");
+const reaching = document.querySelector(".reaching");
+const policy = document.querySelector(".policy");
+
+
+faqsPartFirst.addEventListener("click",function(){
+  firstIcon.classList.toggle("rotate");
+  collapseFirst.classList.toggle("showCollapse");
+  delivery.classList.toggle("pb");
+  collapseFirst.includes("showCollapse") ? faqsPartFirst.style.height="auto" 
+  :   faqsPartFirst.style.height="61px";
+
+})
+
+faqsPartSecond.addEventListener("click",function(){
+  secondIcon.classList.toggle("rotate");
+  collapseSecond.classList.toggle("showCollapse");
+  reaching.classList.toggle("pb");
+})
+
+faqsPartThird.addEventListener("click",function(){
+  thirdIcond.classList.toggle("rotate");
+  collapseThird.classList.toggle("showCollapse");
+  policy.classList.toggle("pb");
+  faqsPartThird.toggle("autoHeight");
+})
