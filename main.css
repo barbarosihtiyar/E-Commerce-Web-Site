@@ -439,6 +439,10 @@ main {
   margin-bottom: 3%;
   border-radius: 10px;
   cursor: pointer;
+  height: 61px;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .autoHeight {
+  height: auto;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst i {
   background-color: #F7DF1E;
@@ -446,17 +450,36 @@ main {
   cursor: pointer;
   padding: 5px;
   border: 1px solid #F7DF1E;
-  border-radius: 10px;
-  font-size: 0.8rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
   float: right;
+  transition: transform 1s;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .rotate {
+  transform: rotate(180deg);
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .delivery {
   font-size: 1rem;
   font-weight: 600;
   color: #333;
+  display: inline-block;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .pb {
+  padding-bottom: 3%;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .collapseFirst {
-  display: none;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .showCollapse {
+  display: block;
+  opacity: 1;
+  padding-top: 3%;
+  border-top: 1px solid #7E7979;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond {
   border: 1px solid #F7DF1E;
@@ -464,6 +487,7 @@ main {
   margin-bottom: 3%;
   border-radius: 10px;
   cursor: pointer;
+  height: 61px;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond i {
   background-color: #F7DF1E;
@@ -471,18 +495,35 @@ main {
   cursor: pointer;
   padding: 5px;
   border: 1px solid #F7DF1E;
-  border-radius: 10px;
-  font-size: 0.8rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
   float: right;
+  transition: transform 1s;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .rotate {
+  transform: rotate(180deg);
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .reaching {
   font-size: 1rem;
   font-weight: 600;
   color: #333;
+  display: inline-block;
   text-align: center;
 }
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .pb {
+  padding-bottom: 3%;
+}
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .collapseSecond {
-  display: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .showCollapse {
+  display: block;
+  transition: display 1s;
+  padding-top: 3%;
+  border-top: 1px solid #7E7979;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird {
   border: 1px solid #F7DF1E;
@@ -490,6 +531,7 @@ main {
   margin-bottom: 3%;
   border-radius: 10px;
   cursor: pointer;
+  height: 61px;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird i {
   background-color: #F7DF1E;
@@ -497,15 +539,32 @@ main {
   cursor: pointer;
   padding: 5px;
   border: 1px solid #F7DF1E;
-  border-radius: 10px;
-  font-size: 0.8rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
   float: right;
+  transition: transform 1s;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .rotate {
+  transform: rotate(180deg);
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .policy {
   font-size: 1rem;
   font-weight: 600;
   color: #333;
+  display: inline-block;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .pb {
+  padding-bottom: 3%;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .collapseThird {
-  display: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .showCollapse {
+  display: block;
+  transition: display 1s;
+  padding-top: 3%;
+  border-top: 1px solid #7E7979;
 }/*# sourceMappingURL=main.css.map */
