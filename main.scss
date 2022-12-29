@@ -430,11 +430,8 @@ main{
                     margin-bottom: 3%;
                     border-radius: 10px;
                     cursor: pointer;
-                    height: 61px;
-
-                    .autoHeight{
-                        height: auto;
-                    }
+                    height: 70px;
+                    transition: height 1sn;
 
                    
                     i{
@@ -470,6 +467,7 @@ main{
                         opacity: 1;
                         padding-top: 3%;
                         border-top: 1px solid $cartInfoText;
+                        transition: opacity 1s;
                     }
                 }                
                 .faqsPartSecond{
@@ -478,7 +476,7 @@ main{
                     margin-bottom: 3%;
                     border-radius: 10px;
                     cursor: pointer;
-                    height: 61px;
+                    height: 70px;
                     
                     i{
                         background-color: $hover-color;
@@ -505,11 +503,13 @@ main{
                         padding-bottom: 3%;
                     }
                     .collapseSecond{
+                        opacity: 0;
                         @include font(1rem,400,$font-color)
                     }
                     .showCollapse{
                         display: block;
-                        transition: display 1s;
+                        transition: opacity 1s;
+                        opacity: 1;
                         padding-top: 3%;
                         border-top: 1px solid $cartInfoText;
                     }
@@ -520,7 +520,7 @@ main{
                     margin-bottom: 3%;
                     border-radius: 10px;
                     cursor: pointer;
-                    height: 61px;
+                    height: 70px;
                     i{
                         background-color: $hover-color;
                         color: $btn-bgcolor;
@@ -544,11 +544,14 @@ main{
                         padding-bottom: 3%;
                     }
                     .collapseThird{
+                        opacity: 0;
+                        transition: opacity 1s;
                         @include font(1rem,400,$font-color)
                     }
                     .showCollapse{
                         display: block;
-                        transition: display 1s;
+                        transition: opacity 1s;
+                        opacity: 1;
                         padding-top: 3%;
                         border-top: 1px solid $cartInfoText;
                     }
@@ -558,3 +561,103 @@ main{
     }
 }
 
+.sectionContact{
+    background-color: $dropdown-color;
+.contact{
+    max-width: 1250px;
+    margin: 0 auto;
+
+.contactWrapper{
+    .contactTitle{
+        @include font(1.8rem,700,$font-color);
+        text-align: center;
+    }
+    .contactText{
+        @include font(1.3rem,700,$font-color);
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .formWrapper{
+        max-width: 85%;
+        margin: 0 auto;
+    .contactTitles{
+        @include font(1.1rem,700,$font-color);
+        text-align: center;
+        margin-top: 2%;
+        display: flex;
+        background-color: $hover-color;
+        margin: 0 auto;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        button{
+            border: none;
+            cursor: pointer;
+        }
+        #reachUsTitle,#aboutUsTitle,#findUsTitle{
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            &:hover{
+                background-color: #f2f2f2;
+            }
+        }
+         #reachUsTitle,#findUsTitle{
+            border-radius: 10px 10px 0 0;
+         }
+        .rafTitle{
+            background-color: $hover-color;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+    }
+}
+.contactForm{
+    display: flex;
+    gap: 3%;
+    img{
+        max-height: 334px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .forms{
+        width: 100%;
+        form{
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            input,textarea{
+                border: 1px solid $hover-color;
+                outline: none;
+                margin-bottom: 3%;
+                resize:none;
+                border-radius: 5px;
+                padding: 1.5%;
+            }
+            label{
+                margin-bottom: 1%;
+                @include font(0.8rem,400,$hover-header-color);
+            }
+            button{
+                @include font(0.7rem,600,$body-color);
+                background-color: $btn-bgcolor;
+                transition: background-color 1s;
+                border: $btn-bgcolor;
+                border-radius: 5px;
+                padding: 1%;
+                cursor: pointer;
+            &:hover{
+                background-color: $hover-color;
+                border: $hover-color;
+                color: $btn-bgcolor;
+            }
+            }
+    }
+}
+}
+}
+}

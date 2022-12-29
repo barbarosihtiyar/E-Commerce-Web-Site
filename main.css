@@ -439,10 +439,8 @@ main {
   margin-bottom: 3%;
   border-radius: 10px;
   cursor: pointer;
-  height: 61px;
-}
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .autoHeight {
-  height: auto;
+  height: 70px;
+  transition: height 1sn;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst i {
   background-color: #F7DF1E;
@@ -480,6 +478,7 @@ main {
   opacity: 1;
   padding-top: 3%;
   border-top: 1px solid #7E7979;
+  transition: opacity 1s;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond {
   border: 1px solid #F7DF1E;
@@ -487,7 +486,7 @@ main {
   margin-bottom: 3%;
   border-radius: 10px;
   cursor: pointer;
-  height: 61px;
+  height: 70px;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond i {
   background-color: #F7DF1E;
@@ -515,13 +514,15 @@ main {
   padding-bottom: 3%;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .collapseSecond {
+  opacity: 0;
   font-size: 1rem;
   font-weight: 400;
   color: #333;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .showCollapse {
   display: block;
-  transition: display 1s;
+  transition: opacity 1s;
+  opacity: 1;
   padding-top: 3%;
   border-top: 1px solid #7E7979;
 }
@@ -531,7 +532,7 @@ main {
   margin-bottom: 3%;
   border-radius: 10px;
   cursor: pointer;
-  height: 61px;
+  height: 70px;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird i {
   background-color: #F7DF1E;
@@ -558,13 +559,125 @@ main {
   padding-bottom: 3%;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .collapseThird {
+  opacity: 0;
+  transition: opacity 1s;
   font-size: 1rem;
   font-weight: 400;
   color: #333;
 }
 .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .showCollapse {
   display: block;
-  transition: display 1s;
+  transition: opacity 1s;
+  opacity: 1;
   padding-top: 3%;
   border-top: 1px solid #7E7979;
+}
+
+.sectionContact {
+  background-color: #FFFCF5;
+}
+.sectionContact .contact {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.sectionContact .contact .contactWrapper .contactTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+.sectionContact .contact .contactWrapper .contactText {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.sectionContact .contact .contactWrapper .formWrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}
+.sectionContact .contact .contactWrapper .formWrapper .contactTitles {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-top: 2%;
+  display: flex;
+  background-color: #F7DF1E;
+  margin: 0 auto;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+.sectionContact .contact .contactWrapper .formWrapper .contactTitles button {
+  border: none;
+  cursor: pointer;
+}
+.sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #aboutUsTitle, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle:hover, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #aboutUsTitle:hover, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle:hover {
+  background-color: #f2f2f2;
+}
+.sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle {
+  border-radius: 10px 10px 0 0;
+}
+.sectionContact .contact .contactWrapper .formWrapper .contactTitles .rafTitle {
+  background-color: #F7DF1E;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.sectionContact .contact .contactForm {
+  display: flex;
+  gap: 3%;
+}
+.sectionContact .contact .contactForm img {
+  max-height: 334px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.sectionContact .contact .contactForm .forms {
+  width: 100%;
+}
+.sectionContact .contact .contactForm .forms form {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.sectionContact .contact .contactForm .forms form input, .sectionContact .contact .contactForm .forms form textarea {
+  border: 1px solid #F7DF1E;
+  outline: none;
+  margin-bottom: 3%;
+  resize: none;
+  border-radius: 5px;
+  padding: 1.5%;
+}
+.sectionContact .contact .contactForm .forms form label {
+  margin-bottom: 1%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+.sectionContact .contact .contactForm .forms form button {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #0D172A;
+  transition: background-color 1s;
+  border: #0D172A;
+  border-radius: 5px;
+  padding: 1%;
+  cursor: pointer;
+}
+.sectionContact .contact .contactForm .forms form button:hover {
+  background-color: #F7DF1E;
+  border: #F7DF1E;
+  color: #0D172A;
 }/*# sourceMappingURL=main.css.map */
