@@ -121,20 +121,19 @@ faqsPartFirst.addEventListener("click",function(){
   firstIcon.classList.toggle("rotate");
   collapseFirst.classList.toggle("showCollapse");
   delivery.classList.toggle("pb");
-  collapseFirst.includes("showCollapse") ? faqsPartFirst.style.height="auto" 
-  :   faqsPartFirst.style.height="61px";
-
+  faqsPartFirst.style.height="auto";
 })
 
 faqsPartSecond.addEventListener("click",function(){
   secondIcon.classList.toggle("rotate");
   collapseSecond.classList.toggle("showCollapse");
   reaching.classList.toggle("pb");
+  faqsPartSecond.style.height="auto";
 })
 
 faqsPartThird.addEventListener("click",function(){
   thirdIcond.classList.toggle("rotate");
   collapseThird.classList.toggle("showCollapse");
   policy.classList.toggle("pb");
-  faqsPartThird.toggle("autoHeight");
+  faqsPartThird.style.height="auto";
 })
