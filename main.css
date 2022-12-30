@@ -580,6 +580,10 @@ main {
   max-width: 1250px;
   margin: 0 auto;
 }
+.sectionContact .contact .contactWrapper {
+  width: 85%;
+  margin: 0 auto;
+}
 .sectionContact .contact .contactWrapper .contactTitle {
   font-size: 1.8rem;
   font-weight: 700;
@@ -595,8 +599,11 @@ main {
   margin-bottom: 2%;
 }
 .sectionContact .contact .contactWrapper .formWrapper {
-  max-width: 85%;
   margin: 0 auto;
+  border-right: 1px solid #7E7979;
+  border-left: 1px solid #7E7979;
+  border-bottom: 1px solid #7E7979;
+  border-radius: 10px;
 }
 .sectionContact .contact .contactWrapper .formWrapper .contactTitles {
   font-size: 1.1rem;
@@ -620,24 +627,33 @@ main {
   width: 100%;
   height: 100%;
   display: inline-block;
+  transition: background-color 1s;
 }
 .sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle:hover, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #aboutUsTitle:hover, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle:hover {
-  background-color: #f2f2f2;
+  background-color: #0D172A;
+  color: #F7DF1E;
 }
-.sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle {
-  border-radius: 10px 10px 0 0;
+.sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle {
+  border-radius: 10px 0 0 0;
+}
+.sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle {
+  border-radius: 0 10px 0 0;
 }
 .sectionContact .contact .contactWrapper .formWrapper .contactTitles .rafTitle {
   background-color: #F7DF1E;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.sectionContact .contact .contactWrapper .formWrapper .contactTitles .showPartCollapse {
+  background-color: #FFFCF5;
+}
 .sectionContact .contact .contactForm {
   display: flex;
   gap: 3%;
+  padding: 2%;
 }
 .sectionContact .contact .contactForm img {
-  max-height: 334px;
+  max-height: 364px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -658,6 +674,12 @@ main {
   resize: none;
   border-radius: 5px;
   padding: 1.5%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+.sectionContact .contact .contactForm .forms form textarea {
+  margin-bottom: 6%;
 }
 .sectionContact .contact .contactForm .forms form label {
   margin-bottom: 1%;
@@ -673,11 +695,41 @@ main {
   transition: background-color 1s;
   border: #0D172A;
   border-radius: 5px;
-  padding: 1%;
+  padding: 2%;
   cursor: pointer;
 }
 .sectionContact .contact .contactForm .forms form button:hover {
   background-color: #F7DF1E;
   border: #F7DF1E;
   color: #0D172A;
+}
+.sectionContact .contact .aboutUs {
+  padding: 2%;
+  display: none;
+}
+.sectionContact .contact .aboutUs .aboutUsTitle {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+.sectionContact .contact .aboutUs p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #7E7979;
+}
+.sectionContact .contact .findUs {
+  padding: 2%;
+  display: none;
+}
+.sectionContact .contact .findUs .findUsTitle {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+.sectionContact .contact .findUs iframe {
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

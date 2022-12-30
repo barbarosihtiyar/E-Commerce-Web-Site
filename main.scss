@@ -568,6 +568,8 @@ main{
     margin: 0 auto;
 
 .contactWrapper{
+    width: 85%;
+    margin: 0 auto;
     .contactTitle{
         @include font(1.8rem,700,$font-color);
         text-align: center;
@@ -579,8 +581,11 @@ main{
         margin-bottom: 2%;
     }
     .formWrapper{
-        max-width: 85%;
         margin: 0 auto;
+        border-right: 1px solid $cartInfoText;
+        border-left: 1px solid $cartInfoText;
+        border-bottom: 1px solid $cartInfoText;
+        border-radius: 10px;
     .contactTitles{
         @include font(1.1rem,700,$font-color);
         text-align: center;
@@ -600,17 +605,25 @@ main{
             width: 100%;
             height: 100%;
             display: inline-block;
+            transition: background-color 1s;
             &:hover{
-                background-color: #f2f2f2;
+                background-color: $btn-bgcolor;
+                color: $hover-color;
             }
         }
-         #reachUsTitle,#findUsTitle{
-            border-radius: 10px 10px 0 0;
+         #reachUsTitle{
+            border-radius: 10px 0 0 0;
+         }
+         #findUsTitle{
+            border-radius: 0 10px 0 0 ;
          }
         .rafTitle{
             background-color: $hover-color;
             padding-top: 1rem;
             padding-bottom: 1rem;
+        }
+        .showPartCollapse{
+            background-color: #FFFCF5;
         }
     }
     }
@@ -618,8 +631,9 @@ main{
 .contactForm{
     display: flex;
     gap: 3%;
+    padding: 2%;
     img{
-        max-height: 334px;
+        max-height: 364px;
         width: 100%;
         object-fit: cover;
         border-radius: 10px;
@@ -637,7 +651,12 @@ main{
                 resize:none;
                 border-radius: 5px;
                 padding: 1.5%;
+                @include font(0.8rem,400,$hover-header-color);
             }
+            textarea{
+                margin-bottom: 6%;
+            }
+
             label{
                 margin-bottom: 1%;
                 @include font(0.8rem,400,$hover-header-color);
@@ -648,7 +667,7 @@ main{
                 transition: background-color 1s;
                 border: $btn-bgcolor;
                 border-radius: 5px;
-                padding: 1%;
+                padding: 2%;
                 cursor: pointer;
             &:hover{
                 background-color: $hover-color;
@@ -658,6 +677,30 @@ main{
             }
     }
 }
+}
+.aboutUs{
+    padding: 2%;
+    display: none;
+    .aboutUsTitle{
+        text-align: center;
+        margin-bottom: 2%;
+        @include font(1.3rem,600,$font-color);
+    }
+    p{
+        @include font(1.2rem,400,$cartInfoText);
+    }
+}
+.findUs{
+    padding: 2%;
+    display: none;
+    .findUsTitle{
+        text-align: center;
+        margin-bottom: 2%;
+        @include font(1.3rem,600,$font-color);
+    }
+    iframe{
+        border-radius: 10px;
+    }
 }
 }
 }
