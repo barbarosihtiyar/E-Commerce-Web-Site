@@ -92,11 +92,11 @@ textNecklace.addEventListener("click",function(){
   for(let i=0 ; i<sunglasses.length ; i++){
     sunglasses[i].style.display="none";
   }
-  for(let i=0 ; i<sunglasses.length ; i++){
+  for(let i=0 ; i<trousers.length ; i++){
     trousers[i].style.display="none";
   }
 
-  for(let i=0 ; i<sunglasses.length ; i++){
+  for(let i=0 ; i<necklace.length ; i++){
     necklace[i].style.display="block";
   }
 
@@ -137,3 +137,42 @@ faqsPartThird.addEventListener("click",function(){
   policy.classList.toggle("pb");
   faqsPartThird.style.height="auto";
 })
+
+const showPartCollapse = document.querySelector(".showPartCollapse");
+const reachUsTitle = document.getElementById("reachUsTitle");
+const aboutUsTitle = document.getElementById("aboutUsTitle");
+const findUsTitle = document.getElementById("findUsTitle");
+const contactForm  =document.querySelector(".contactForm");
+const aboutUs  =document.querySelector(".aboutUs");
+const findUs  =document.querySelector(".findUs");
+
+reachUsTitle.addEventListener("click",function(){
+  reachUsTitle.classList.add("showPartCollapse");
+  reachUsTitle.style.backgroundcolor="#FFFFFF";
+  aboutUsTitle.classList.remove("showPartCollapse");
+  findUsTitle.classList.remove("showPartCollapse");
+  contactForm.classList.remove("none");
+  aboutUs.classList.add("none");
+  findUs.classList.add("none");
+})
+aboutUsTitle.addEventListener("click",function(){
+  aboutUsTitle.classList.add("showPartCollapse");
+  aboutUsTitle.style.backgroundcolor="#FFFFFF";
+  reachUsTitle.classList.remove("showPartCollapse");
+  findUsTitle.classList.remove("showPartCollapse");
+  aboutUs.classList.remove("none");
+  contactForm.classList.add("none");
+  findUs.classList.add("none");
+})
+findUsTitle.addEventListener("click",function(){
+  findUsTitle.classList.add("showPartCollapse");
+  findUsTitle.style.backgroundcolor="#FFFFFF";
+  aboutUsTitle.classList.remove("showPartCollapse");
+  reachUsTitle.classList.remove("showPartCollapse");
+  findUs.classList.remove("none");
+  contactForm.classList.add("none");
+  aboutUs.classList.add("none");
+})
+
+
+
