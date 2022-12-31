@@ -367,6 +367,10 @@ main {
   border: 1px solid #F7DF1E;
   margin-top: 3%;
   border-radius: 10px;
+  position: relative;
+}
+.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece {
+  position: absolute;
 }
 .product .sectionProduct .productWrapper .allCart .cart .productCart .productCartPhoto img {
   max-height: 292px;
@@ -605,6 +609,9 @@ main {
   border-bottom: 1px solid #7E7979;
   border-radius: 10px;
 }
+.sectionContact .contact .contactWrapper .formWrapper .none {
+  display: none;
+}
 .sectionContact .contact .contactWrapper .formWrapper .contactTitles {
   font-size: 1.1rem;
   font-weight: 700;
@@ -646,6 +653,7 @@ main {
 }
 .sectionContact .contact .contactWrapper .formWrapper .contactTitles .showPartCollapse {
   background-color: #FFFCF5;
+  pointer-events: none;
 }
 .sectionContact .contact .contactForm {
   display: flex;
@@ -705,7 +713,6 @@ main {
 }
 .sectionContact .contact .aboutUs {
   padding: 2%;
-  display: none;
 }
 .sectionContact .contact .aboutUs .aboutUsTitle {
   text-align: center;
@@ -721,7 +728,6 @@ main {
 }
 .sectionContact .contact .findUs {
   padding: 2%;
-  display: none;
 }
 .sectionContact .contact .findUs .findUsTitle {
   text-align: center;
