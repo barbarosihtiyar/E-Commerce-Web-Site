@@ -370,7 +370,34 @@ main {
   position: relative;
 }
 .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece {
-  position: absolute;
+  display: none;
+  background-color: #F7DF1E;
+  border-radius: 10px;
+  width: 38%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  margin-top: -2%;
+}
+.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece i {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0D172A;
+  padding: 16.3px 8.8px;
+  background-color: #F7DF1E;
+  border-radius: 10px;
+}
+.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece .piece {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #333;
+  background-color: #FFFFFF;
+  padding: 11px 20px 12px 20px;
+}
+.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece span {
+  display: inline-block;
+}
+.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece .minus, .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece .plus {
+  cursor: pointer;
 }
 .product .sectionProduct .productWrapper .allCart .cart .productCart .productCartPhoto img {
   max-height: 292px;
@@ -593,6 +620,9 @@ main {
   font-weight: 700;
   color: #333;
   text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 3%;
 }
 .sectionContact .contact .contactWrapper .contactText {
   font-size: 1.3rem;
