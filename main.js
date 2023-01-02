@@ -176,3 +176,19 @@ findUsTitle.addEventListener("click",function(){
 
 
 
+const addCart = document.querySelectorAll(".addCart");
+const shopCartPiece = document.querySelectorAll(".shopCartPiece");
+const productCartButton = document.querySelectorAll(".productCartButton");
+
+
+for(i=0 ; i < addCart.length ; i++){
+addCart[i].addEventListener("click",function(e){
+  e.target.style.display="none";
+  for(i=0 ; i < shopCartPiece.length ; i++){
+    if(addCart[i].style.display == "none"){
+      shopCartPiece[i].style.display="block";
+    }
+  }
+});
+}
+
