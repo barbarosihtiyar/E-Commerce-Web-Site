@@ -179,16 +179,88 @@ findUsTitle.addEventListener("click",function(){
 const addCart = document.querySelectorAll(".addCart");
 const shopCartPiece = document.querySelectorAll(".shopCartPiece");
 const productCartButton = document.querySelectorAll(".productCartButton");
-
+const minus = document.querySelectorAll(".minus");
+const plus = document.querySelectorAll(".plus");
+let pieceText = document.querySelectorAll(".piece");
 
 for(i=0 ; i < addCart.length ; i++){
 addCart[i].addEventListener("click",function(e){
   e.target.style.display="none";
   for(i=0 ; i < shopCartPiece.length ; i++){
     if(addCart[i].style.display == "none"){
-      shopCartPiece[i].style.display="block";
+      shopCartPiece[i].style.display="flex";
     }
   }
 });
 }
 
+console.log(pieceText.value);
+
+for(i=0 ; i < minus.length ; i++){
+minus[i].addEventListener("click",function(e){
+  for(j=0; j < minus.length ; j++){
+    if(e.target.classList.contains("1") && minus[j].classList.contains("1")){
+      pieceText[0].value--;
+      console.log(pieceText[0].value);
+    }else if(e.target.classList.contains("1") && minus[j].classList.contains("2")){
+      pieceText[1].value--;
+    }else if(e.target.classList.contains("2") && minus[j].classList.contains("3")){
+      pieceText[2].value--;
+    }else if(e.target.classList.contains("3") && minus[j].classList.contains("4")){
+      pieceText[3].value--;
+    }else if(e.target.classList.contains("4") && minus[j].classList.contains("5")){
+      pieceText[4].value--;
+    }else if(e.target.classList.contains("5") && minus[j].classList.contains("6")){
+      pieceText[5].value--;
+    }else if(e.target.classList.contains("6") && minus[j].classList.contains("7")){
+      pieceText[6].value--;
+    }else if(e.target.classList.contains("7") && minus[j].classList.contains("8")){
+      pieceText[7].value--;
+    }else if(e.target.classList.contains("8") && minus[j].classList.contains("9")){
+      pieceText[8].value--;
+    }else if(e.target.classList.contains("9") && minus[j].classList.contains("10")){
+      pieceText[9].value--;
+    }else if(e.target.classList.contains("10") && minus[j].classList.contains("11")){
+      pieceText[10].value--;
+    }else if(e.target.classList.contains("11") && minus[j].classList.contains("12")){
+      pieceText[11].value--;
+  }
+}
+}
+)}
+
+
+for(i=0 ; i < plus.length ; i++){
+  plus[i].addEventListener("click",function(e){
+    for(j=0; j < plus.length ; j++){
+      if(e.target.classList.contains("1") && plus[j].classList.contains("1")){
+        pieceText[0].value++;
+      }else if(e.target.classList.contains("2") && plus[j].classList.contains("2")){
+        pieceText[1].value++;
+      }else if(e.target.classList.contains("3") && plus[j].classList.contains("3")){
+        pieceText[2].value++;
+      }else if(e.target.classList.contains("4") && plus[j].classList.contains("4")){
+        pieceText[3].value++;
+      }else if(e.target.classList.contains("5") && plus[j].classList.contains("5")){
+        pieceText[4].value++;
+      }else if(e.target.classList.contains("6") && plus[j].classList.contains("6")){
+        pieceText[5].value++;
+      }else if(e.target.classList.contains("7") && plus[j].classList.contains("7")){
+        pieceText[6].value++;
+      }else if(e.target.classList.contains("8") && plus[j].classList.contains("8")){
+        pieceText[7].value++;
+      }else if(e.target.classList.contains("8") && plus[j].classList.contains("9")){
+        pieceText[8].value++;
+      }else if(e.target.classList.contains("8") && plus[j].classList.contains("10")){
+        pieceText[9].value++;
+      }else if(e.target.classList.contains("8") && plus[j].classList.contains("11")){
+        pieceText[10].value++;
+      }else if(e.target.classList.contains("8") && plus[j].classList.contains("12")){
+        pieceText[11].value++;
+      }
+    }
+  }
+  )}
+  
+  
+console.log(minus.length);
