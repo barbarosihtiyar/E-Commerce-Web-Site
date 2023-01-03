@@ -393,6 +393,11 @@ main {
   background-color: #FFFFFF;
   padding: 11px 20px 12px 20px;
 }
+.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece input[type=number] {
+  width: 50px;
+  border: none;
+  outline: none;
+}
 .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece span {
   display: inline-block;
 }
@@ -768,4 +773,10 @@ main {
 }
 .sectionContact .contact .findUs iframe {
   border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */

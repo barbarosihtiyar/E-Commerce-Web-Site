@@ -378,6 +378,11 @@ main{
                         background-color: #FFFFFF;
                         padding: 11px 20px 12px 20px;
                     }
+                    input[type=number]{
+                        width: 50px;
+                        border: none;
+                        outline: none;
+                    }
                     span{
                         display: inline-block;
                     }
@@ -737,3 +742,10 @@ main{
 }
 }
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
