@@ -202,27 +202,27 @@ minus[i].addEventListener("click",function(e){
     if(e.target.classList.contains("1") && minus[j].classList.contains("1")){
       pieceText[0].value--;
       console.log(pieceText[0].value);
-    }else if(e.target.classList.contains("1") && minus[j].classList.contains("2")){
+    }else if(e.target.classList.contains("2") && minus[j].classList.contains("2")){
       pieceText[1].value--;
-    }else if(e.target.classList.contains("2") && minus[j].classList.contains("3")){
+    }else if(e.target.classList.contains("3") && minus[j].classList.contains("3")){
       pieceText[2].value--;
-    }else if(e.target.classList.contains("3") && minus[j].classList.contains("4")){
+    }else if(e.target.classList.contains("4") && minus[j].classList.contains("4")){
       pieceText[3].value--;
-    }else if(e.target.classList.contains("4") && minus[j].classList.contains("5")){
+    }else if(e.target.classList.contains("5") && minus[j].classList.contains("5")){
       pieceText[4].value--;
-    }else if(e.target.classList.contains("5") && minus[j].classList.contains("6")){
+    }else if(e.target.classList.contains("6") && minus[j].classList.contains("6")){
       pieceText[5].value--;
-    }else if(e.target.classList.contains("6") && minus[j].classList.contains("7")){
+    }else if(e.target.classList.contains("7") && minus[j].classList.contains("7")){
       pieceText[6].value--;
-    }else if(e.target.classList.contains("7") && minus[j].classList.contains("8")){
+    }else if(e.target.classList.contains("8") && minus[j].classList.contains("8")){
       pieceText[7].value--;
-    }else if(e.target.classList.contains("8") && minus[j].classList.contains("9")){
+    }else if(e.target.classList.contains("9") && minus[j].classList.contains("9")){
       pieceText[8].value--;
-    }else if(e.target.classList.contains("9") && minus[j].classList.contains("10")){
+    }else if(e.target.classList.contains("10") && minus[j].classList.contains("10")){
       pieceText[9].value--;
-    }else if(e.target.classList.contains("10") && minus[j].classList.contains("11")){
+    }else if(e.target.classList.contains("11") && minus[j].classList.contains("11")){
       pieceText[10].value--;
-    }else if(e.target.classList.contains("11") && minus[j].classList.contains("12")){
+    }else if(e.target.classList.contains("12") && minus[j].classList.contains("12")){
       pieceText[11].value--;
   }
 }
@@ -249,18 +249,27 @@ for(i=0 ; i < plus.length ; i++){
         pieceText[6].value++;
       }else if(e.target.classList.contains("8") && plus[j].classList.contains("8")){
         pieceText[7].value++;
-      }else if(e.target.classList.contains("8") && plus[j].classList.contains("9")){
+      }else if(e.target.classList.contains("9") && plus[j].classList.contains("9")){
         pieceText[8].value++;
-      }else if(e.target.classList.contains("8") && plus[j].classList.contains("10")){
+      }else if(e.target.classList.contains("10") && plus[j].classList.contains("10")){
         pieceText[9].value++;
-      }else if(e.target.classList.contains("8") && plus[j].classList.contains("11")){
+      }else if(e.target.classList.contains("11") && plus[j].classList.contains("11")){
         pieceText[10].value++;
-      }else if(e.target.classList.contains("8") && plus[j].classList.contains("12")){
+      }else if(e.target.classList.contains("12") && plus[j].classList.contains("12")){
         pieceText[11].value++;
       }
     }
   }
   )}
   
-  
-console.log(minus.length);
+const shopCartOpen = document.getElementById("cart");
+const shopCartClose = document.getElementById("shopCartClose");
+const shopCart = document.querySelector(".shopCart");
+
+shopCartOpen.addEventListener("click",function(){
+shopCart.classList.add("openShopCart");
+})
+
+shopCartClose.addEventListener("click",function(){
+  shopCart.classList.remove("openShopCart");
+})
