@@ -100,7 +100,96 @@ top: 0;
 
 main{
     margin-top: 7%;
-}
+
+    .shopCart{
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        background-color: #FFFFFF;
+        width: 35%;
+        height: 100%;
+        transform:translateX(100%);
+        transition: transform 2s;
+        .shopCartWrapper{
+            margin-top: 11%;
+            padding: 5% 3%;
+            div{
+                padding: 5px 0;
+            }
+            .shopCartHeader{
+                .shopCartTitle{
+                    @include font(1rem,600,$font-color);
+                    width:88%;
+                    display: inline-block;
+                }
+                .shopCartClose{
+                    @include font(1rem,600,$font-color)
+                }
+            }
+            .shopCartEmpty{
+                @include font(0.8rem,600,$font-color);
+                display: none;
+            }
+            .shopCartInfo{
+                margin-top: 5%;
+                padding: 0;
+                border-bottom: 1px solid $hover-color;
+                padding-bottom: 4%;
+                display: flex;
+                gap: 10%;
+                .shopCartInfoImg{
+                    width: 191px;
+                    height: 112px;
+                    .shopCartImg{
+                        width: 191px;
+                        height: 112px;
+                        object-fit: cover;
+                    }
+                }
+                .shopCartInfoTitle{
+                    @include font(0.85rem,600,$font-color)
+                }
+                .shopCartInfoDesc{
+                    @include font(0.75rem,500,$font-color)
+                }
+                .shopCartQuantity{
+                    .shopCartQuantityTitle{
+                        @include font(0.85rem,600,$font-color)
+                    }
+                    .shopCartQuantityNumber{
+                        @include font(0.75rem,500,$font-color)
+                    }
+                }
+            }
+            .shopCartProductPrice{
+                @include font(0.75rem,500,$font-color)
+            }
+                .totalPrice{
+                    padding-top: 7%;
+                    .totalPriceTitle{
+                        @include font(1rem,600,$font-color);
+                        display:inline-block;
+                        width: 81%;
+                    }
+                    .totalPriceNumber{
+                        @include font(0.85rem,500,$font-color);
+                    }
+                }
+                    .totalProduct{
+                        .totalProductTitle{
+                            @include font(1rem,600,$font-color);
+                            width: 77%;
+                            display: inline-block;    
+                        }
+                        .totalProductQuantity{
+                        @include font(0.85rem,500,$font-color);
+                        }
+                    }
+                
+            
+        }
+    }
 
 .slideshow-container {
   max-width: 1250px;
@@ -379,7 +468,7 @@ main{
                         padding: 11px 20px 12px 20px;
                     }
                     input[type=number]{
-                        width: 50px;
+                        width: 55px;
                         border: none;
                         outline: none;
                     }
@@ -748,4 +837,26 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.openShopCart{
+    transform:translateX(0);
+}
+}
 
+footer{
+    .footerContainer{
+        max-width: 1250px;
+    }
+    .footerWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3% 0;
+        .personalLogo{
+            .personalLogoImage{
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}

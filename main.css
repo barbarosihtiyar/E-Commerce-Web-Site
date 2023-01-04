@@ -87,19 +87,122 @@ header .container .header-wrapper .cart div {
 main {
   margin-top: 7%;
 }
-
-.slideshow-container {
+main .shopCart {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  background-color: #FFFFFF;
+  width: 35%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform 2s;
+}
+main .shopCart .shopCartWrapper {
+  margin-top: 11%;
+  padding: 5% 3%;
+}
+main .shopCart .shopCartWrapper div {
+  padding: 5px 0;
+}
+main .shopCart .shopCartWrapper .shopCartHeader .shopCartTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  width: 88%;
+  display: inline-block;
+}
+main .shopCart .shopCartWrapper .shopCartHeader .shopCartClose {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+main .shopCart .shopCartWrapper .shopCartEmpty {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  display: none;
+}
+main .shopCart .shopCartWrapper .shopCartInfo {
+  margin-top: 5%;
+  padding: 0;
+  border-bottom: 1px solid #F7DF1E;
+  padding-bottom: 4%;
+  display: flex;
+  gap: 10%;
+}
+main .shopCart .shopCartWrapper .shopCartInfo .shopCartInfoImg {
+  width: 191px;
+  height: 112px;
+}
+main .shopCart .shopCartWrapper .shopCartInfo .shopCartInfoImg .shopCartImg {
+  width: 191px;
+  height: 112px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .shopCart .shopCartWrapper .shopCartInfo .shopCartInfoTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+main .shopCart .shopCartWrapper .shopCartInfo .shopCartInfoDesc {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #333;
+}
+main .shopCart .shopCartWrapper .shopCartInfo .shopCartQuantity .shopCartQuantityTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+main .shopCart .shopCartWrapper .shopCartInfo .shopCartQuantity .shopCartQuantityNumber {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #333;
+}
+main .shopCart .shopCartWrapper .shopCartProductPrice {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #333;
+}
+main .shopCart .shopCartWrapper .totalPrice {
+  padding-top: 7%;
+}
+main .shopCart .shopCartWrapper .totalPrice .totalPriceTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  display: inline-block;
+  width: 81%;
+}
+main .shopCart .shopCartWrapper .totalPrice .totalPriceNumber {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+}
+main .shopCart .shopCartWrapper .totalProduct .totalProductTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  width: 77%;
+  display: inline-block;
+}
+main .shopCart .shopCartWrapper .totalProduct .totalProductQuantity {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+}
+main .slideshow-container {
   max-width: 1250px;
   position: relative;
   margin: auto;
 }
-
-.mySlides {
+main .mySlides {
   position: relative;
   display: none;
 }
-
-.mySlides:nth-child(even):after {
+main .mySlides:nth-child(even):after {
   content: "";
   position: absolute;
   top: 0;
@@ -108,27 +211,23 @@ main {
   height: 100%;
   background-color: rgba(94, 80, 91, 0.3);
 }
-
-.mySlides img {
+main .mySlides img {
   border-radius: 20px;
   max-height: 352px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.mySlides span {
+main .mySlides span {
   position: absolute;
 }
-
-#slider1Text {
+main #slider1Text {
   color: #5E55DA;
   font-weight: 600;
   font-size: 2.5rem;
   top: 14%;
   left: 40%;
 }
-
-#slider2Text {
+main #slider2Text {
   color: #F5EDEC;
   font-weight: 600;
   font-size: 2.5rem;
@@ -136,16 +235,14 @@ main {
   left: 28%;
   z-index: 2;
 }
-
-#slider3Text {
+main #slider3Text {
   color: #514BAE;
   font-weight: 600;
   font-size: 2.5rem;
   top: 14%;
   left: 35%;
 }
-
-.prev, .next {
+main .prev, main .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -162,22 +259,18 @@ main {
       -ms-user-select: none;
           user-select: none;
 }
-
-.next {
+main .next {
   right: 3%;
   border-radius: 3px 0 0 3px;
 }
-
-.prev {
+main .prev {
   left: 2.5%;
 }
-
-.prev:hover, .next:hover {
+main .prev:hover, main .next:hover {
   background-color: #F7DF1E;
   border-radius: 10px;
 }
-
-.text {
+main .text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -186,22 +279,19 @@ main {
   width: 100%;
   text-align: center;
 }
-
-.numbertext {
+main .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-
-.fade {
+main .fade {
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -210,7 +300,6 @@ main {
     opacity: 1;
   }
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -219,25 +308,25 @@ main {
     opacity: 1;
   }
 }
-.parts {
+main .parts {
   background-color: #FFFCF5;
   margin-top: 3%;
 }
-.parts .showPart {
+main .parts .showPart {
   max-width: 1250px;
   margin: 0 auto;
 }
-.parts .showPart .partWrapper {
+main .parts .showPart .partWrapper {
   display: flex;
 }
-.parts .showPart .partWrapper .partText {
+main .parts .showPart .partWrapper .partText {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin: auto 0;
   margin-right: auto;
 }
-.parts .showPart .partWrapper .partText #specialText {
+main .parts .showPart .partWrapper .partText #specialText {
   font-size: 1.5rem;
   font-weight: 600;
   color: #333;
@@ -248,17 +337,17 @@ main {
   border-radius: 10px;
   padding: 8px;
 }
-.parts .showPart .partWrapper .partText #newCollection {
+main .parts .showPart .partWrapper .partText #newCollection {
   font-size: 2.3rem;
   font-weight: 700;
   color: #333;
 }
-.parts .showPart .partWrapper .partProduct {
+main .parts .showPart .partWrapper .partProduct {
   display: flex;
   margin-top: 3%;
   gap: 1%;
 }
-.parts .showPart .partWrapper .partProduct .afterFilter::after {
+main .parts .showPart .partWrapper .partProduct .afterFilter::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -268,15 +357,15 @@ main {
   background-color: rgba(66, 22, 55, 0.3);
   border-radius: 10px;
 }
-.parts .showPart .partWrapper .partProduct .partProductFirst {
+main .parts .showPart .partWrapper .partProduct .partProductFirst {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.parts .showPart .partWrapper .partProduct .sunglassesBorder, .parts .showPart .partWrapper .partProduct .trousersBorder, .parts .showPart .partWrapper .partProduct .necklacesBorder {
+main .parts .showPart .partWrapper .partProduct .sunglassesBorder, main .parts .showPart .partWrapper .partProduct .trousersBorder, main .parts .showPart .partWrapper .partProduct .necklacesBorder {
   position: relative;
 }
-.parts .showPart .partWrapper .partProduct .sunglassesBorder .borderPart, .parts .showPart .partWrapper .partProduct .trousersBorder .borderPart, .parts .showPart .partWrapper .partProduct .necklacesBorder .borderPart {
+main .parts .showPart .partWrapper .partProduct .sunglassesBorder .borderPart, main .parts .showPart .partWrapper .partProduct .trousersBorder .borderPart, main .parts .showPart .partWrapper .partProduct .necklacesBorder .borderPart {
   position: absolute;
   font-size: 1.3rem;
   font-weight: 700;
@@ -286,11 +375,11 @@ main {
   cursor: pointer;
   transition: scale 0.1s;
 }
-.parts .showPart .partWrapper .partProduct .sunglassesBorder .borderPart:hover, .parts .showPart .partWrapper .partProduct .trousersBorder .borderPart:hover, .parts .showPart .partWrapper .partProduct .necklacesBorder .borderPart:hover {
+main .parts .showPart .partWrapper .partProduct .sunglassesBorder .borderPart:hover, main .parts .showPart .partWrapper .partProduct .trousersBorder .borderPart:hover, main .parts .showPart .partWrapper .partProduct .necklacesBorder .borderPart:hover {
   background-color: #F7DF1E;
   scale: 1.1;
 }
-.parts .showPart .partWrapper .partProduct .sunglassesBorder #sunglassesText, .parts .showPart .partWrapper .partProduct .trousersBorder #sunglassesText, .parts .showPart .partWrapper .partProduct .necklacesBorder #sunglassesText {
+main .parts .showPart .partWrapper .partProduct .sunglassesBorder #sunglassesText, main .parts .showPart .partWrapper .partProduct .trousersBorder #sunglassesText, main .parts .showPart .partWrapper .partProduct .necklacesBorder #sunglassesText {
   top: 40%;
   left: 25%;
   border-radius: 10px;
@@ -298,7 +387,7 @@ main {
   width: 150px;
   text-align: center;
 }
-.parts .showPart .partWrapper .partProduct .sunglassesBorder #trousersText, .parts .showPart .partWrapper .partProduct .trousersBorder #trousersText, .parts .showPart .partWrapper .partProduct .necklacesBorder #trousersText {
+main .parts .showPart .partWrapper .partProduct .sunglassesBorder #trousersText, main .parts .showPart .partWrapper .partProduct .trousersBorder #trousersText, main .parts .showPart .partWrapper .partProduct .necklacesBorder #trousersText {
   top: 35%;
   left: 25%;
   border-radius: 10px;
@@ -306,7 +395,7 @@ main {
   width: 150px;
   text-align: center;
 }
-.parts .showPart .partWrapper .partProduct .sunglassesBorder #necklacesText, .parts .showPart .partWrapper .partProduct .trousersBorder #necklacesText, .parts .showPart .partWrapper .partProduct .necklacesBorder #necklacesText {
+main .parts .showPart .partWrapper .partProduct .sunglassesBorder #necklacesText, main .parts .showPart .partWrapper .partProduct .trousersBorder #necklacesText, main .parts .showPart .partWrapper .partProduct .necklacesBorder #necklacesText {
   top: 40%;
   left: 25%;
   border-radius: 10px;
@@ -314,62 +403,61 @@ main {
   width: 180px;
   text-align: center;
 }
-.parts .showPart .partWrapper .partProduct .sunglassesBorder .partProductImage, .parts .showPart .partWrapper .partProduct .trousersBorder .partProductImage, .parts .showPart .partWrapper .partProduct .necklacesBorder .partProductImage {
+main .parts .showPart .partWrapper .partProduct .sunglassesBorder .partProductImage, main .parts .showPart .partWrapper .partProduct .trousersBorder .partProductImage, main .parts .showPart .partWrapper .partProduct .necklacesBorder .partProductImage {
   border-radius: 15px;
   height: 100%;
 }
-
-.product .sectionProduct {
+main .product .sectionProduct {
   max-width: 1350px;
   margin: 0 auto;
 }
-.product .sectionProduct .productWrapper {
+main .product .sectionProduct .productWrapper {
   margin-top: 3%;
 }
-.product .sectionProduct .productWrapper .productTitle {
+main .product .sectionProduct .productWrapper .productTitle {
   font-size: 1.8rem;
   font-weight: 600;
   color: #333;
   text-align: center;
   margin-bottom: 1%;
 }
-.product .sectionProduct .productWrapper .productsPartTitle {
+main .product .sectionProduct .productWrapper .productsPartTitle {
   font-size: 1.2rem;
   font-weight: 600;
   color: #333;
   text-align: center;
   margin-bottom: 1%;
 }
-.product .sectionProduct .productWrapper .productsPartTitle .cartHover:hover {
+main .product .sectionProduct .productWrapper .productsPartTitle .cartHover:hover {
   border-bottom: 2px solid #F7DF1E;
   cursor: pointer;
   padding-bottom: 5px;
 }
-.product .sectionProduct .productWrapper .productsPartTitle .cartBorder {
+main .product .sectionProduct .productWrapper .productsPartTitle .cartBorder {
   border-bottom: 2px solid #F7DF1E;
   cursor: pointer;
   padding-bottom: 5px;
 }
-.product .sectionProduct .productWrapper .productsPartTitle #textAll, .product .sectionProduct .productWrapper .productsPartTitle #textSunglasses, .product .sectionProduct .productWrapper .productsPartTitle #textTrousers {
+main .product .sectionProduct .productWrapper .productsPartTitle #textAll, main .product .sectionProduct .productWrapper .productsPartTitle #textSunglasses, main .product .sectionProduct .productWrapper .productsPartTitle #textTrousers {
   margin-right: 2%;
 }
-.product .sectionProduct .productWrapper .allCart {
+main .product .sectionProduct .productWrapper .allCart {
   display: flex;
   flex-wrap: wrap;
   gap: 2%;
   margin-left: 3%;
 }
-.product .sectionProduct .productWrapper .allCart .cart {
+main .product .sectionProduct .productWrapper .allCart .cart {
   margin-bottom: 2%;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart {
   width: 294px;
   border: 1px solid #F7DF1E;
   margin-top: 3%;
   border-radius: 10px;
   position: relative;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece {
   display: none;
   background-color: #F7DF1E;
   border-radius: 10px;
@@ -378,7 +466,7 @@ main {
   margin-bottom: 5%;
   margin-top: -2%;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece i {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece i {
   font-size: 0.8rem;
   font-weight: 600;
   color: #0D172A;
@@ -386,56 +474,56 @@ main {
   background-color: #F7DF1E;
   border-radius: 10px;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece .piece {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece .piece {
   font-size: 0.8rem;
   font-weight: 400;
   color: #333;
   background-color: #FFFFFF;
   padding: 11px 20px 12px 20px;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece input[type=number] {
-  width: 50px;
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece input[type=number] {
+  width: 55px;
   border: none;
   outline: none;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece span {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece span {
   display: inline-block;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece .minus, .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece .plus {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece .minus, main .product .sectionProduct .productWrapper .allCart .cart .productCart .shopCartPiece .plus {
   cursor: pointer;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .productCartPhoto img {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .productCartPhoto img {
   max-height: 292px;
   min-width: 292px;
   border-radius: 10px;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .productCartInfo {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .productCartInfo {
   margin-top: 5%;
   margin-bottom: 3%;
   display: flex;
   flex-direction: column;
   margin-left: 3%;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .productCartInfo .productCartTitle {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .productCartInfo .productCartTitle {
   font-size: 0.95rem;
   font-weight: 600;
   color: #333;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .productCartInfo .productCartTextInfo {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .productCartInfo .productCartTextInfo {
   font-size: 0.9rem;
   font-weight: 600;
   color: #7E7979;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .productCartInfo .productCartPrice {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .productCartInfo .productCartPrice {
   font-size: 0.9rem;
   font-weight: 700;
   color: #0D172A;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .productCartButton {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .productCartButton {
   text-align: center;
   margin-bottom: 5%;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .productCartButton .addCart {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .productCartButton .addCart {
   background-color: #0D172A;
   border: 1px solid #0D172A;
   border-radius: 10px;
@@ -447,29 +535,28 @@ main {
   width: 110px;
   cursor: pointer;
 }
-.product .sectionProduct .productWrapper .allCart .cart .productCart .productCartButton .addCart:hover {
+main .product .sectionProduct .productWrapper .allCart .cart .productCart .productCartButton .addCart:hover {
   background-color: #F7DF1E;
   border: 1px solid #F7DF1E;
   color: #0D172A;
 }
-
-.sectionFaqs .faqs {
+main .sectionFaqs .faqs {
   max-width: 1250px;
   margin: 0 auto;
   margin-top: 2%;
 }
-.sectionFaqs .faqs .faqsWrapper .faqsTitle {
+main .sectionFaqs .faqs .faqsWrapper .faqsTitle {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
   color: #333;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs {
   width: 85%;
   margin: 0 auto;
   margin-top: 2%;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst {
   border: 1px solid #F7DF1E;
   padding: 2%;
   margin-bottom: 3%;
@@ -478,7 +565,7 @@ main {
   height: 70px;
   transition: height 1sn;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst i {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst i {
   background-color: #F7DF1E;
   color: #0D172A;
   cursor: pointer;
@@ -490,33 +577,33 @@ main {
   float: right;
   transition: transform 1s;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .rotate {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .rotate {
   transform: rotate(180deg);
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .delivery {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .delivery {
   font-size: 1rem;
   font-weight: 600;
   color: #333;
   display: inline-block;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .pb {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .pb {
   padding-bottom: 3%;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .collapseFirst {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .collapseFirst {
   opacity: 0;
   transition: opacity 1s;
   font-size: 1rem;
   font-weight: 400;
   color: #333;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .showCollapse {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartFirst .showCollapse {
   display: block;
   opacity: 1;
   padding-top: 3%;
   border-top: 1px solid #7E7979;
   transition: opacity 1s;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond {
   border: 1px solid #F7DF1E;
   padding: 2%;
   margin-bottom: 3%;
@@ -524,7 +611,7 @@ main {
   cursor: pointer;
   height: 70px;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond i {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond i {
   background-color: #F7DF1E;
   color: #0D172A;
   cursor: pointer;
@@ -536,33 +623,33 @@ main {
   float: right;
   transition: transform 1s;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .rotate {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .rotate {
   transform: rotate(180deg);
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .reaching {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .reaching {
   font-size: 1rem;
   font-weight: 600;
   color: #333;
   display: inline-block;
   text-align: center;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .pb {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .pb {
   padding-bottom: 3%;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .collapseSecond {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .collapseSecond {
   opacity: 0;
   font-size: 1rem;
   font-weight: 400;
   color: #333;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .showCollapse {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartSecond .showCollapse {
   display: block;
   transition: opacity 1s;
   opacity: 1;
   padding-top: 3%;
   border-top: 1px solid #7E7979;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird {
   border: 1px solid #F7DF1E;
   padding: 2%;
   margin-bottom: 3%;
@@ -570,7 +657,7 @@ main {
   cursor: pointer;
   height: 70px;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird i {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird i {
   background-color: #F7DF1E;
   color: #0D172A;
   cursor: pointer;
@@ -582,45 +669,44 @@ main {
   float: right;
   transition: transform 1s;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .rotate {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .rotate {
   transform: rotate(180deg);
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .policy {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .policy {
   font-size: 1rem;
   font-weight: 600;
   color: #333;
   display: inline-block;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .pb {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .pb {
   padding-bottom: 3%;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .collapseThird {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .collapseThird {
   opacity: 0;
   transition: opacity 1s;
   font-size: 1rem;
   font-weight: 400;
   color: #333;
 }
-.sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .showCollapse {
+main .sectionFaqs .faqs .faqsWrapper .partFaqs .faqsPartThird .showCollapse {
   display: block;
   transition: opacity 1s;
   opacity: 1;
   padding-top: 3%;
   border-top: 1px solid #7E7979;
 }
-
-.sectionContact {
+main .sectionContact {
   background-color: #FFFCF5;
 }
-.sectionContact .contact {
+main .sectionContact .contact {
   max-width: 1250px;
   margin: 0 auto;
 }
-.sectionContact .contact .contactWrapper {
+main .sectionContact .contact .contactWrapper {
   width: 85%;
   margin: 0 auto;
 }
-.sectionContact .contact .contactWrapper .contactTitle {
+main .sectionContact .contact .contactWrapper .contactTitle {
   font-size: 1.8rem;
   font-weight: 700;
   color: #333;
@@ -629,7 +715,7 @@ main {
   width: 100%;
   margin-top: 3%;
 }
-.sectionContact .contact .contactWrapper .contactText {
+main .sectionContact .contact .contactWrapper .contactText {
   font-size: 1.3rem;
   font-weight: 700;
   color: #333;
@@ -637,17 +723,17 @@ main {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-.sectionContact .contact .contactWrapper .formWrapper {
+main .sectionContact .contact .contactWrapper .formWrapper {
   margin: 0 auto;
   border-right: 1px solid #7E7979;
   border-left: 1px solid #7E7979;
   border-bottom: 1px solid #7E7979;
   border-radius: 10px;
 }
-.sectionContact .contact .contactWrapper .formWrapper .none {
+main .sectionContact .contact .contactWrapper .formWrapper .none {
   display: none;
 }
-.sectionContact .contact .contactWrapper .formWrapper .contactTitles {
+main .sectionContact .contact .contactWrapper .formWrapper .contactTitles {
   font-size: 1.1rem;
   font-weight: 700;
   color: #333;
@@ -661,56 +747,56 @@ main {
   border-radius: 10px;
   margin-bottom: 2%;
 }
-.sectionContact .contact .contactWrapper .formWrapper .contactTitles button {
+main .sectionContact .contact .contactWrapper .formWrapper .contactTitles button {
   border: none;
   cursor: pointer;
 }
-.sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #aboutUsTitle, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle {
+main .sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle, main .sectionContact .contact .contactWrapper .formWrapper .contactTitles #aboutUsTitle, main .sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle {
   width: 100%;
   height: 100%;
   display: inline-block;
   transition: background-color 1s;
 }
-.sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle:hover, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #aboutUsTitle:hover, .sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle:hover {
+main .sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle:hover, main .sectionContact .contact .contactWrapper .formWrapper .contactTitles #aboutUsTitle:hover, main .sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle:hover {
   background-color: #0D172A;
   color: #F7DF1E;
 }
-.sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle {
+main .sectionContact .contact .contactWrapper .formWrapper .contactTitles #reachUsTitle {
   border-radius: 10px 0 0 0;
 }
-.sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle {
+main .sectionContact .contact .contactWrapper .formWrapper .contactTitles #findUsTitle {
   border-radius: 0 10px 0 0;
 }
-.sectionContact .contact .contactWrapper .formWrapper .contactTitles .rafTitle {
+main .sectionContact .contact .contactWrapper .formWrapper .contactTitles .rafTitle {
   background-color: #F7DF1E;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.sectionContact .contact .contactWrapper .formWrapper .contactTitles .showPartCollapse {
+main .sectionContact .contact .contactWrapper .formWrapper .contactTitles .showPartCollapse {
   background-color: #FFFCF5;
   pointer-events: none;
 }
-.sectionContact .contact .contactForm {
+main .sectionContact .contact .contactForm {
   display: flex;
   gap: 3%;
   padding: 2%;
 }
-.sectionContact .contact .contactForm img {
+main .sectionContact .contact .contactForm img {
   max-height: 364px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-.sectionContact .contact .contactForm .forms {
+main .sectionContact .contact .contactForm .forms {
   width: 100%;
 }
-.sectionContact .contact .contactForm .forms form {
+main .sectionContact .contact .contactForm .forms form {
   margin-top: 2%;
   display: flex;
   flex-direction: column;
 }
-.sectionContact .contact .contactForm .forms form input, .sectionContact .contact .contactForm .forms form textarea {
+main .sectionContact .contact .contactForm .forms form input, main .sectionContact .contact .contactForm .forms form textarea {
   border: 1px solid #F7DF1E;
   outline: none;
   margin-bottom: 3%;
@@ -721,16 +807,16 @@ main {
   font-weight: 400;
   color: #7F7F7F;
 }
-.sectionContact .contact .contactForm .forms form textarea {
+main .sectionContact .contact .contactForm .forms form textarea {
   margin-bottom: 6%;
 }
-.sectionContact .contact .contactForm .forms form label {
+main .sectionContact .contact .contactForm .forms form label {
   margin-bottom: 1%;
   font-size: 0.8rem;
   font-weight: 400;
   color: #7F7F7F;
 }
-.sectionContact .contact .contactForm .forms form button {
+main .sectionContact .contact .contactForm .forms form button {
   font-size: 0.7rem;
   font-weight: 600;
   color: #FFFFFF;
@@ -741,42 +827,59 @@ main {
   padding: 2%;
   cursor: pointer;
 }
-.sectionContact .contact .contactForm .forms form button:hover {
+main .sectionContact .contact .contactForm .forms form button:hover {
   background-color: #F7DF1E;
   border: #F7DF1E;
   color: #0D172A;
 }
-.sectionContact .contact .aboutUs {
+main .sectionContact .contact .aboutUs {
   padding: 2%;
 }
-.sectionContact .contact .aboutUs .aboutUsTitle {
+main .sectionContact .contact .aboutUs .aboutUsTitle {
   text-align: center;
   margin-bottom: 2%;
   font-size: 1.3rem;
   font-weight: 600;
   color: #333;
 }
-.sectionContact .contact .aboutUs p {
+main .sectionContact .contact .aboutUs p {
   font-size: 1.2rem;
   font-weight: 400;
   color: #7E7979;
 }
-.sectionContact .contact .findUs {
+main .sectionContact .contact .findUs {
   padding: 2%;
 }
-.sectionContact .contact .findUs .findUsTitle {
+main .sectionContact .contact .findUs .findUsTitle {
   text-align: center;
   margin-bottom: 2%;
   font-size: 1.3rem;
   font-weight: 600;
   color: #333;
 }
-.sectionContact .contact .findUs iframe {
+main .sectionContact .contact .findUs iframe {
   border-radius: 10px;
 }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+main input::-webkit-outer-spin-button,
+main input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+main .openShopCart {
+  transform: translateX(0);
+}
+
+footer .footerContainer {
+  max-width: 1250px;
+}
+footer .footerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0;
+}
+footer .footerWrapper .personalLogo .personalLogoImage {
+  width: 32px;
+  height: 32px;
 }/*# sourceMappingURL=main.css.map */
