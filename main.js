@@ -360,8 +360,31 @@ const shopCart = document.querySelector(".shopCart");
 
 shopCartOpen.addEventListener("click",function(){
 shopCart.classList.add("openShopCart");
+mybutton.style.display="none";
+mybutton.style.opacity="0";
 })
 
 shopCartClose.addEventListener("click",function(){
   shopCart.classList.remove("openShopCart");
+  mybutton.style.display="block";
+  mybutton.style.opacity="1";
 })
+
+
+
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  }else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
