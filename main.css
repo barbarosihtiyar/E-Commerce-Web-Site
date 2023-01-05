@@ -99,7 +99,7 @@ main .shopCart {
   transition: transform 2s;
 }
 main .shopCart .shopCartWrapper {
-  margin-top: 11%;
+  margin-top: 14%;
   padding: 5% 3%;
 }
 main .shopCart .shopCartWrapper div {
@@ -157,6 +157,16 @@ main .shopCart .shopCartWrapper .shopCartInfo .shopCartQuantity .shopCartQuantit
   color: #333;
 }
 main .shopCart .shopCartWrapper .shopCartInfo .shopCartQuantity .shopCartQuantityNumber {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #333;
+}
+main .shopCart .shopCartWrapper .shopCartInfo .shopCartQuantity .shopCartTimes {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #333;
+}
+main .shopCart .shopCartWrapper .shopCartInfo .shopCartQuantity .shopCartProductPrice {
   font-size: 0.75rem;
   font-weight: 500;
   color: #333;
