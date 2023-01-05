@@ -182,10 +182,17 @@ const productCartButton = document.querySelectorAll(".productCartButton");
 const minus = document.querySelectorAll(".minus");
 const plus = document.querySelectorAll(".plus");
 let pieceText = document.querySelectorAll(".piece");
+let cartValue = document.getElementById("cartValue");
+let intCartValue = parseInt(cartValue.innerText);
 
 for(i=0 ; i < addCart.length ; i++){
 addCart[i].addEventListener("click",function(e){
   e.target.style.display="none";
+  if(e.target.style.display="none"){
+    intCartValue += 1;
+    cartValue.innerHTML = intCartValue;
+    console.log(intCartValue);
+  }
   for(i=0 ; i < shopCartPiece.length ; i++){
     if(addCart[i].style.display == "none"){
       shopCartPiece[i].style.display="flex";
@@ -194,40 +201,125 @@ addCart[i].addEventListener("click",function(e){
 });
 }
 
-console.log(pieceText.value);
+
+
 
 for(i=0 ; i < minus.length ; i++){
 minus[i].addEventListener("click",function(e){
   for(j=0; j < minus.length ; j++){
     if(e.target.classList.contains("1") && minus[j].classList.contains("1")){
       pieceText[0].value--;
-      console.log(pieceText[0].value);
+      if(pieceText[0].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[0].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("2") && minus[j].classList.contains("2")){
       pieceText[1].value--;
+      if(pieceText[1].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[1].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("3") && minus[j].classList.contains("3")){
       pieceText[2].value--;
+      if(pieceText[2].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[2].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("4") && minus[j].classList.contains("4")){
       pieceText[3].value--;
+      if(pieceText[3].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[3].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("5") && minus[j].classList.contains("5")){
       pieceText[4].value--;
+      if(pieceText[4].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[4].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("6") && minus[j].classList.contains("6")){
       pieceText[5].value--;
+      if(pieceText[5].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[5].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("7") && minus[j].classList.contains("7")){
       pieceText[6].value--;
+      if(pieceText[6].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[6].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("8") && minus[j].classList.contains("8")){
       pieceText[7].value--;
+      if(pieceText[7].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[7].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("9") && minus[j].classList.contains("9")){
       pieceText[8].value--;
+      if(pieceText[8].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[8].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("10") && minus[j].classList.contains("10")){
       pieceText[9].value--;
+      if(pieceText[9].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[9].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("11") && minus[j].classList.contains("11")){
       pieceText[10].value--;
+      if(pieceText[10].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[10].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
     }else if(e.target.classList.contains("12") && minus[j].classList.contains("12")){
       pieceText[11].value--;
+      if(pieceText[11].value <= 0){
+        addCart[j].style.display="";
+        shopCartPiece[j].style.display="none";
+        pieceText[11].value = 1;
+        intCartValue -= 1;
+        cartValue.innerHTML = intCartValue;
+      }        
   }
 }
 }
 )}
+
 
 
 for(i=0 ; i < plus.length ; i++){
