@@ -55,7 +55,7 @@
             <div class="shopCartWrapper">
                 <div class="shopCartHeader">
                     <span class="shopCartTitle">My Cart</span>
-                    <span class="shopCartClose" id="shopCartClose"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                    <span style="cursor: pointer;" class="shopCartClose" id="shopCartClose"><i class="fa-sharp fa-solid fa-xmark"></i></span>
                 </div>
                 <div class="shopCartEmpty">
                     <span>There is nothing added in your cart.</span>
@@ -71,7 +71,8 @@
                          <span class="shopCartQuantityTitle">
                             Quantity : 
                          </span>
-                         <span class="shopCartQuantityNumber">1 x </span>
+                         <span class="shopCartQuantityNumber">1</span>
+                         <span class="shopCartTimes"> x </span>
                          <span class="shopCartProductPrice">$1,129</span>
                         </div>
                         </div>
@@ -164,7 +165,7 @@
                                 <div class="shopCartPiece">
                                     <span style="cursor:pointer" class="minus 1" id="minus"><i
                                             class="fa-solid fa-minus 1"></i></span>
-                                    <input type="number" id="piece" class="piece" value="1" readonly="readonly">
+                                    <input type="number"  id="piece" class="piece" value="1" readonly="readonly">
                                     <span style="cursor:pointer" class="plus 1" id="plus"><i
                                             class="fa-solid fa-plus  1"></i></span>
                                 </div>
@@ -187,7 +188,7 @@
                                     <span style="cursor:pointer" class="minus 2" id="minus"><i
                                             class="fa-solid fa-minus 2"></i></span>
                                             <input type="number" id="piece" class="piece" value="1" readonly="readonly">
-                                            <span style="cursor:pointer" class="plus" id="plus 2"><i
+                                            <span style="cursor:pointer" class="plus 2" id="plus 2"><i
                                             class="fa-solid fa-plus 2"></i></span>
                                 </div>
                             </div>
