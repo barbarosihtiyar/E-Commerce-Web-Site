@@ -111,6 +111,7 @@ main{
         height: 100%;
         transform:translateX(100%);
         transition: transform 2s;
+        overflow: auto;
         .shopCartWrapper{
             margin-top: 14%;
             padding: 5% 3%;
@@ -131,12 +132,15 @@ main{
                 @include font(0.8rem,600,$font-color);
                 display: none;
             }
+            .shopCartInfoFlex{
+                display: flex !important;
+            }
             .shopCartInfo{
-                margin-top: 5%;
+                display: none; 
+                margin-top: 3%;
                 padding: 0;
-                // border-bottom: 1px solid $hover-color;
-                padding-bottom: 4%;
-                display: flex;
+                border-bottom: 1px solid $hover-color;
+                padding-bottom: 6%;
                 gap: 10%;
                 .shopCartInfoImg{
                     width: 191px;
