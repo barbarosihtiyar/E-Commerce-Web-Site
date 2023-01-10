@@ -211,6 +211,8 @@ let photo = document.querySelectorAll(".photo");
 let pieceText = document.querySelectorAll(".piece");
 let cartValue = document.getElementById("cartValue");
 let intCartValue = parseInt(cartValue.innerText);
+let val = 0;
+
 
 
 addCart[0].addEventListener("click",function(){
@@ -248,7 +250,7 @@ addCart[2].addEventListener("click",function(){
   totalPriceTitle.innerHTML = "Total Price:"
   totalProductTitle.innerHTML="Product Quantity:"
   // shopCartThird.style.borderBottom = "1px solid #F7DF1E";
-  shopCartThird.classList.add("shopCartInfoFlex");
+  shopCartThird.classList.add("shopCartInfoFlex");  
 })
 addCart[3].addEventListener("click",function(){
   shopCartInfoImg[3].innerHTML=`<img src="./image/sg-4.jpg" alt="" class="shopCartImg">`
@@ -368,7 +370,6 @@ addCart[i].addEventListener("click",function(e){
     intCartValue += 1;
     cartValue.innerHTML = intCartValue;
     totalProductQuantity.innerHTML = intCartValue;
-    console.log(intCartValue);
   }
   for(i=0 ; i < shopCartPiece.length ; i++){
     if(addCart[i].style.display == "none"){
@@ -388,11 +389,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[0].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[0].value = 1;
+        pieceText[0].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
          shopCartQuantityNumber[0].innerHTML = intCartValue;
+         shopCartFirst.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("2") && minus[j].classList.contains("2")){
       pieceText[1].value--;
@@ -400,11 +402,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[1].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[1].value = 1;
+        pieceText[1].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[1].innerHTML = intCartValue;
+        shopCartSecond.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("3") && minus[j].classList.contains("3")){
       pieceText[2].value--;
@@ -412,11 +415,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[2].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[2].value = 1;
+        pieceText[2].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[2].innerHTML = intCartValue;
+        shopCartThird.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("4") && minus[j].classList.contains("4")){
       pieceText[3].value--;
@@ -424,11 +428,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[3].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[3].value = 1;
+        pieceText[3].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[3].innerHTML = intCartValue;
+        shopCartFourth.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("5") && minus[j].classList.contains("5")){
       pieceText[4].value--;
@@ -436,11 +441,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[4].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[4].value = 1;
+        pieceText[4].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[4].innerHTML = intCartValue;
+        shopCartFiveth.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("6") && minus[j].classList.contains("6")){
       pieceText[5].value--;
@@ -448,11 +454,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[5].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[5].value = 1;
+        pieceText[5].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[5].innerHTML = intCartValue;
+        shopCartSixth.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("7") && minus[j].classList.contains("7")){
       pieceText[6].value--;
@@ -460,11 +467,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[6].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[6].value = 1;
+        pieceText[6].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[6].innerHTML = intCartValue;
+        shopCartSeventh.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("8") && minus[j].classList.contains("8")){
       pieceText[7].value--;
@@ -472,11 +480,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[7].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[7].value = 1;
+        pieceText[7].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[7].innerHTML = intCartValue;
+        shopCartEighth.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("9") && minus[j].classList.contains("9")){
       pieceText[8].value--;
@@ -484,11 +493,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[8].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[8].value = 1;
+        pieceText[8].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[8].innerHTML = intCartValue;
+        shopCartNineth.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("10") && minus[j].classList.contains("10")){
       pieceText[9].value--;
@@ -496,11 +506,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[9].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[9].value = 1;
+        pieceText[9].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[9].innerHTML = intCartValue;
+        shopCartTenth.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("11") && minus[j].classList.contains("11")){
       pieceText[10].value--;
@@ -508,11 +519,12 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[10].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[10].value = 1;
+        pieceText[10].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[10].innerHTML = intCartValue;
+        shopCartEleventh.classList.remove("shopCartInfoFlex");
       }        
     }else if(e.target.classList.contains("12") && minus[j].classList.contains("12")){
       pieceText[11].value--;
@@ -520,17 +532,29 @@ minus[i].addEventListener("click",function(e){
       if(pieceText[11].value <= 0){
         addCart[j].style.display="";
         shopCartPiece[j].style.display="none";
-        pieceText[11].value = 1;
+        pieceText[11].value = 0;
         intCartValue -= 1;
         cartValue.innerHTML = intCartValue;
         totalProductQuantity.innerHTML = intCartValue;
         shopCartQuantityNumber[11].innerHTML = intCartValue;
+        shopCartTwelveth.classList.remove("shopCartInfoFlex");
       }        
   }
 }
+val = pieceText[0].value * 1129 + pieceText[1].value * 1205 + pieceText[2].value * 1995 + 
+pieceText[3].value * 1005 + pieceText[4].value * 1889 + pieceText[5].value * 1919 + 
+pieceText[6].value * 1635 + pieceText[7].value * 1705 + pieceText[8].value * 1619 + 
+pieceText[9].value * 1908 + pieceText[10].value * 985 + pieceText[11].value * 1235
+totalPriceNumber.innerHTML = `$${val}`;
 }
 )}
 
+val = pieceText[0].value * 1129 + pieceText[1].value * 1205 + pieceText[2].value * 1995 + 
+pieceText[3].value * 1005 + pieceText[4].value * 1889 + pieceText[5].value * 1919 + 
+pieceText[6].value * 1635 + pieceText[7].value * 1705 + pieceText[8].value * 1619 + 
+pieceText[9].value * 1908 + pieceText[10].value * 985 + pieceText[11].value * 1235
+totalPriceNumber.innerHTML = `$${val}`;
+console.log(pieceText[0].value);
 
 
 for(i=0 ; i < plus.length ; i++){
@@ -574,8 +598,15 @@ for(i=0 ; i < plus.length ; i++){
         shopCartQuantityNumber[11].innerHTML = pieceText[11].value;
       }
     }
+    val = pieceText[0].value * 1129 + pieceText[1].value * 1205 + pieceText[2].value * 1995 + 
+    pieceText[3].value * 1005 + pieceText[4].value * 1889 + pieceText[5].value * 1919 + 
+    pieceText[6].value * 1635 + pieceText[7].value * 1705 + pieceText[8].value * 1619 + 
+    pieceText[9].value * 1908 + pieceText[10].value * 985 + pieceText[11].value * 1235
+    totalPriceNumber.innerHTML = `$${val}`;
   }
   )}
+
+
   
 const shopCartOpen = document.getElementById("cart");
 const shopCartClose = document.getElementById("shopCartClose");
@@ -611,3 +642,5 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
