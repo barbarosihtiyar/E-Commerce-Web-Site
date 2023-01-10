@@ -132,9 +132,6 @@ main{
                 @include font(0.8rem,600,$font-color);
                 display: none;
             }
-            .shopCartInfoFlex{
-                display: flex !important;
-            }
             .shopCartInfo{
                 display: none; 
                 margin-top: 3%;
@@ -172,6 +169,9 @@ main{
                     }        
                 }
             }
+            .shopCartInfoFlex{
+                display: flex ;
+            }    
             .shopCartProductPrice{
                 @include font(0.75rem,500,$font-color)
             }
@@ -180,7 +180,7 @@ main{
                     .totalPriceTitle{
                         @include font(1rem,600,$font-color);
                         display:inline-block;
-                        width: 81%;
+                        width: 73%;
                     }
                     .totalPriceNumber{
                         @include font(0.85rem,500,$font-color);

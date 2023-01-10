@@ -124,9 +124,6 @@ main .shopCart .shopCartWrapper .shopCartEmpty {
   color: #333;
   display: none;
 }
-main .shopCart .shopCartWrapper .shopCartInfoFlex {
-  display: flex !important;
-}
 main .shopCart .shopCartWrapper .shopCartInfo {
   display: none;
   margin-top: 3%;
@@ -175,6 +172,9 @@ main .shopCart .shopCartWrapper .shopCartInfo .shopCartQuantity .shopCartProduct
   font-weight: 500;
   color: #333;
 }
+main .shopCart .shopCartWrapper .shopCartInfoFlex {
+  display: flex;
+}
 main .shopCart .shopCartWrapper .shopCartProductPrice {
   font-size: 0.75rem;
   font-weight: 500;
@@ -188,7 +188,7 @@ main .shopCart .shopCartWrapper .totalPrice .totalPriceTitle {
   font-weight: 600;
   color: #333;
   display: inline-block;
-  width: 81%;
+  width: 73%;
 }
 main .shopCart .shopCartWrapper .totalPrice .totalPriceNumber {
   font-size: 0.85rem;
