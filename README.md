@@ -2,18 +2,18 @@
 *E-Commerce Web Site is a Javascript based web application. In this E-Commerce Web Site, Users can see information about the company and the answers to their questions on the site. They can add the products on the site to their baskets. They can see the total prices of the products they add in their cart.*
 
 # Features
--Company Information
--Frequently Asked Questions
--Product Sections
--Add to Cart
--See total cost in cart
+- Company Information
+- Frequently Asked Questions
+- Product Sections
+- Add to Cart
+- See total cost in cart
 
 #### In Addition
--SASS Design
--When the add to cart button is clicked, the product increase button
--The number of products added to the cart in the cart and the total number of products
--Up button that is active after a certain height
--Dynamic Design
+- SASS Design
+- When the add to cart button is clicked, the product increase button
+- The number of products added to the cart in the cart and the total number of products
+- Up button that is active after a certain height
+- Dynamic Design
 
 
 
